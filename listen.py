@@ -79,13 +79,13 @@ def read_callback(samples, rtl_sdr_obj):
 
 
 parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-parser.add_argument('--ppm', type=int, default=56,
+parser.add_argument('--ppm', type=int, default=0,
                     help='ppm error correction')
 parser.add_argument('--gain', type=int, default=20,
                     help='RF gain level')
 parser.add_argument('--freq', type=int, default=92900000,
                     help='frequency to listen to, in Hertz')
-parser.add_argument('--lang', type=str, default='ru-RU',
+parser.add_argument('--lang', type=str, default='en-US',
                     help='language to recognize, en-US, ru-RU, fi-FI or any other supported')
 parser.add_argument('--buf', type=int, default=100,
                     help='buffer size to recognize, 100 = 6.25 seconds')
