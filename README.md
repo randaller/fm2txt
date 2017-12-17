@@ -9,6 +9,7 @@ pip install -r requirements.txt
 ```
 
 Last step is to copy 2 files from x64!!! osmocom rtl-sdr drivers: https://osmocom.org/attachments/download/2242/RelWithDebInfo.zip
+
 Copy these [rtl-sdr-release/x64/]: rtlsdr.dll & libusb-1.0.dll into C:\Windows folder.
 
 Now we may run, this will produce text recognition results file [radio_log.txt]:
