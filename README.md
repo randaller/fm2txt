@@ -27,6 +27,11 @@ To mute audio output use verbose key:
 python listen.py --verbose
 ```
 
+If you experiencing some audio gaps, try to lower down digitising frequency, for example:
+```
+sdr.rs = 1024000
+```
+
 List of supported languages and their codes: https://cloud.google.com/speech/docs/languages
 
 Recognition quality can be improved using paid Google, Microsoft, IBM or other services.
