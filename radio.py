@@ -16,7 +16,7 @@ audio_output = pyaudio.PyAudio().open(format=pyaudio.paInt16, channels=1, rate=a
 
 def process(samples: SampleStream, sdr: RtlSdr) -> None:
     sample_rate_fm = 240000
-    iq_comercial = signal.decimate(samples, int(sdr.get_sample_rate()) // sample_rate_fm, zero_phase=False)
+    iq_comercial = signal.decimate(samples, int(sdr.get_sample_rate()) // sample_rate_fm, zero_phase=True)
 
     angle_comercial = np.unwrap(np.angle(iq_comercial))
     demodulated_comercial = np.diff(angle_comercial)
