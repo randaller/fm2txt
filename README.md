@@ -27,7 +27,7 @@ To mute audio output use verbose key:
 python listen.py --verbose
 ```
 
-If you experiencing some audio gaps, try to lower down digitising frequency, for example:
+If you experiencing some audio gaps due to high CPU usage, try to lower down digitising frequency, for example:
 ```
 sdr.rs = 1024000
 ```
